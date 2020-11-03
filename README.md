@@ -8,6 +8,9 @@ perl extractMetFromBed_CG.pl BOT_1000_genes subjectsall.csv CG
 
 
 
+
+
+---------------------------
 ##  -1- gene body commands:
 ---------------------------
 
@@ -36,7 +39,7 @@ for i in `cut -f 1 subjectsall.csv` ; do python merge_met_by_subject.py BOT_1000
 
 
 
-
+------------------------------------------------------------------------------------------------------------------------
 ## -2-  5' and 3' gene sides (-5000 pb from TSS to TSS site and TTS site to +5000pb from TTS, respectively) commands:
 ------------------------------------------------------------------------------------------------------------------------
 
