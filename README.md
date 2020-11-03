@@ -1,4 +1,4 @@
-##extract coordinates into the gene limits (+- 5000 pb from TSS and TTS, respectively) from the methylation bed files.
+## extract coordinates into the gene limits (+- 5000 pb from TSS and TTS, respectively) from the methylation bed files.
 
 #command : case of CG context with the 1000 most highly (top1000) and 1000 most lowly expressed genes. 
 
