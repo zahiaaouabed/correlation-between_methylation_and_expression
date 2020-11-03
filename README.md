@@ -13,11 +13,11 @@ perl extractMetFromBed_CG.pl BOT_1000_genes subjectsall.csv CG
 
 ## normalization with respect to gene length: define bins of 500 and calculate the average methylation in each bin.
 
-#---example 1 : CG context, top1000 genes, antisense strand.
+#---example 1 : CG context, top1000 genes and antisense strand.
 
 python normalizeGeneParallelProcess_sm.py TOP_strandminus_genes 500 CG top_1000_CG_TEST_sm.tsv subjectsall.csv
 
-#---example 2 : CG context, top1000 genes, sense strand.
+#---example 2 : CG context, top1000 genes and sense strand.
 
 python normalizeGeneParallelProcess_sp.py TOP_strandplus_genes 500 CG top_1000_CG_TEST_sp.tsv subjectsall.csv
 
@@ -42,7 +42,7 @@ for i in `cut -f 1 subjectsall.csv` ; do python merge_met_by_subject.py BOT_1000
 
 ## normalization with respect to the length: define bins of 100 and calculate the average methylation in each bin.
 
-#---example : 3' gene side, CG context, top1000 genes and sense / antisense strand.
+#---example : 3' CG context, top1000 genes and sense / antisense strand.
 
 python normalizeFlanking3RegParallelProcess_sm.py TOP_strandminus_genes 100 CG top_1000_CG_TEST_3_sm.tsv subjectsall.csv
 
