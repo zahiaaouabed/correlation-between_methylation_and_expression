@@ -11,7 +11,7 @@ perl extractMetFromBed_CG.pl BOT_1000_genes subjectsall.csv CG
 ##  -1- gene body commands:
 ---------------------------
 
-## normalization with respect to gene length: define bins of 500pb and calculate the average methylation in each bin.
+## normalization with respect to gene length: define bins of 500 and calculate the average methylation in each bin.
 
 #---example 1 : CG context, top1000 genes, antisense strand.
 
@@ -40,7 +40,7 @@ for i in `cut -f 1 subjectsall.csv` ; do python merge_met_by_subject.py BOT_1000
 ## -2-  5' and 3' gene sides (-5000 pb from TSS to TSS site and TTS site to +5000pb from TTS, respectively) commands:
 ------------------------------------------------------------------------------------------------------------------------
 
-## normalization with respect to the length: define bins of 100pb and calculate the average methylation in each bin.
+## normalization with respect to the length: define bins of 100 and calculate the average methylation in each bin.
 
 #---example : 3' gene side, CG context, top1000 genes and sense / antisense strand.
 
