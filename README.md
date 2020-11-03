@@ -42,7 +42,7 @@ for i in `cut -f 1 subjectsall.csv` ; do python merge_met_by_subject.py BOT_1000
 
 ## normalization with respect to the length: define bins of 100 and calculate the average methylation in each bin.
 
-#---example : 3' CG context, top1000 genes and sense / antisense strand.
+#---example : 3' gene side, CG context, top1000 genes and sense / antisense strand.
 
 python normalizeFlanking3RegParallelProcess_sm.py TOP_strandminus_genes 100 CG top_1000_CG_TEST_3_sm.tsv subjectsall.csv
 
