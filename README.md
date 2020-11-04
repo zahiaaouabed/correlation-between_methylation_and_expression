@@ -20,6 +20,7 @@ Example 1: CG context, top1000 genes and antisense strand.
 
 ```python normalizeGeneParallelProcess_sm.py TOP_strandminus_genes 500 CG top_1000_CG_TEST_sm.tsv subjectsall.csv```
 
+
 Example 2: CG context, top1000 genes and sense strand.
 
 ```python normalizeGeneParallelProcess_sp.py TOP_strandplus_genes 500 CG top_1000_CG_TEST_sp.tsv subjectsall.csv```
@@ -31,6 +32,7 @@ Example 2: CG context, top1000 genes and sense strand.
 Example 1: CG context, top1000 genes.
 
 ```for i in `cut -f 1 subjectsall.csv`; do python merge_met_by_subject.py TOP_1000_genes $i CG > csv/CG/gene/s${i}.CG.top1000.csv ; done```
+
 
 Example 2: CG context, bot1000 genes.
 
@@ -51,6 +53,7 @@ Example 1: 3' gene side, CG context, top1000 genes and sense / antisense strand.
 
 ```python normalizeFlanking3RegParallelProcess_sp.py TOP_strandplus_genes 100 CG top_1000_CG_TEST_3_sp.tsv subjectsall.csv```
 
+
 Example 2: 5' gene side, CG context, top1000 genes and sense / antisense strand.
 
 ```python normalizeFlankingRegParallelProcess_sm.py TOP_strandminus_genes 100 CG top_1000_CG_TEST_5_sm.tsv subjectsall.csv```
@@ -64,6 +67,7 @@ Example 2: 5' gene side, CG context, top1000 genes and sense / antisense strand.
 Example 1: 3' gene side, CG context, top1000 expressed genes.
 
 ```for i in `cut -f 1 subjectsall.csv` ; do python met_3fl_met_by_subject.py TOP_1000_genes $i CG > csv/CG/3f/s${i}.3.CG.top1000.csv ; done```
+
 
 Example 2: 5' gene side, CG context, top1000 expressed genes.
 
